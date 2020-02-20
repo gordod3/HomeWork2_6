@@ -1,12 +1,13 @@
-public class Cat<A extends Number> implements Runnable {
+public class Cat<A extends Number> implements Runnable<A> {
     A age;
 
     public Cat(A age) {
         this.age = age;
     }
-    
-    @override
-    void run(){
-        system.out.println("Бежит");
+
+
+    @Override
+    public String run() {
+        return "Бежит";
     }
 }
