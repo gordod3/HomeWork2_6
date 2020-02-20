@@ -1,4 +1,4 @@
-public class Cat<A extends Number> implements Runnable<A> {
+public class Cat<A extends Number> implements Printable<A> {
     A age;
 
     public Cat(A age) {
@@ -7,7 +7,7 @@ public class Cat<A extends Number> implements Runnable<A> {
 
 
     @Override
-    public String run() {
-        return "Бежит";
+    public A print() {
+        return age;
     }
 }
